@@ -29,13 +29,22 @@ get: (cid: any) => Promise<Uint8Array>
   const { get, put } = blockStore({ /*cache,*/ containerClient })
 
 ```
-
 ## Build
 
 ```sh
 npm run clean
 npm install
 npm run build
+```
+
+## Test
+
+Configure your storage account
+
+```sh
+export AZURE_STORAGE_ACCOUNT_NAME=xyz
+```
+```sh
 npm run test
 ```
 
