@@ -32,7 +32,7 @@ afterEach(() => {
   return Promise.all([deletePromise])
 });
 
-test("demo az cas usage for @dstanesc/store-chunky-bytes", async () => {
+test("demo az cas usage in the context of @dstanesc/store-chunky-bytes", async () => {
   // optional cache
   const cache = {};
 
