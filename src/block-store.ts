@@ -18,8 +18,6 @@ const blockStore = ({ cache, containerClient }: { cache?: any, containerClient: 
             const blobResponse = await blobClient.download(0)
             bytes = await toBuffer(blobResponse.readableStreamBody)
         }
-        if (!bytes)
-            throw new Error(`Block not found for ${cid.toString()}`)
         return bytes
     }
 
