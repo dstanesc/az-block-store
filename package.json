@@ -1,7 +1,7 @@
 {
   "name": "@dstanesc/az-block-store",
   "description": "Simple content-addressable storage (CAS) based on Azure Blob Storage",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/dstanesc/az-block-store",
   "repository": "https://github.com/dstanesc/az-block-store",
   "license": "(Apache-2.0 AND MIT)",

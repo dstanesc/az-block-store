@@ -17,6 +17,8 @@ const blockStore = ({ cache, containerClient }: { cache?: any, containerClient: 
             const blobClient: BlockBlobClient = containerClient.getBlockBlobClient(cid.toString())
             const blobResponse = await blobClient.download(0)
             bytes = await toBuffer(blobResponse.readableStreamBody)
+            if (cache)
+                cache[cid.toString()] = bytes
         }
         return bytes
     }
